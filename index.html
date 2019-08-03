@@ -3,184 +3,208 @@
 <html lang="br">
     
     <head>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        
         <title>Portifólio - MySite</title>
-        <meta charset="utf-8">
+        <!-- <meta charset="utf-8"/> -->
+        
         <meta name="author"    content="Nayara">
         <meta name="generator" content="Brackets">
         <meta name="keywords"  content="HTML5, WoMakersCodeRJ,Front End, Desafio#2">
         <meta name="description" content="Desenvolvedora Front-end">
         <meta name="application-name" content="Desenvolvimento Profissional">
         
-        <style>
-            #email {
-                background-color:transparent;
-                width: 300px;
-                text-align: center;
-                border: 1px solid yellow;
-                padding: 0px;
-                margin: 0px;
-            }
-        </style>                            
+                                   
     </head>
         
     <body><!--aparece na pagina-->
         
+        <header>
+            <nav><!--<div id="navegacao"> local onde é feito a navegação principal do site-->
+                <img src="./images/logo.png" alt="logo" width="100"/>
+                <ul>
+                  <li><a href="home.html">HOME</a></li>
+                  <li><a href="servico.html">SERVIÇOS</a></li>
+                  <li><a href="portfolio.html">PORTFÓLIO</a></li>
+                  <li><a href="sobre.html">SOBRE MIM</a></li>
+                  <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav><!--</div>-->
+        </header>
+        
         <main>
-            
-            <header>
-                <nav><!--<div id="navegacao"> local onde é feito a navegação principal do site-->
-                    <img src="./images/logo.png" alt="logo" width="100"/>
-                    <ul>
-                      <li><a href="home.html">HOME</a></li>
-                      <li><a href="servico.html">SERVIÇOS</a></li>
-                      <li><a href="portfolio.html">PORTFÓLIO</a></li>
-                      <li><a href="sobre.html">SOBRE MIM</a></li>
-                      <li><a href="contato.html">CONTATO</a></li>
-                    </ul>
-                </nav><!--</div>-->
-            </header>
-            <div id="home">
+            <!--<div class="teste"></div>-->
+            <div id="home">    
                 <section class="home">
-                    <h2>BEM VIND@ </h2> 
-                    <h3>Nayara bem vindaaaaaaaa.</h3>
-                    <p>Este site é uma grande conquista, blablablablá</p>
-                    <img src="images/slider01.png" alt="borboleta" width="300" height="300"/>
-                    
+                    <div class="home-content" >
+                        <img src="images/slider01.png" alt="borboleta"/>
+                        <h2>BEM VIND@ </h2> 
+                        <h3>CURABITUR IACULIS.</h3>
+                        <p> Vestibulum rutrum eros nec viverra convallis. Maecenas rutrum tortor in ante scelerisque, eget dictum felis egestas.
+Mauris luctus mauris id ex ornare, at cursus leo dictum.</p>
+                    </div>
                 </section>
             </div>
+        
             
-            <div id="wrap">
-                <section class="servicos">
+            <section class="servicos">
+                <div class="border1">
                     <h2>Serviços</h2>
-                    <p>Hoje me desafio a aprender e desenvolver habilidades para ser destaque no mercado. </p>                   
-                    <hr>
-                    
+                    <p>Duis et mauris non mi iaculis accumsan. Quisque tristique eros eu arcu aliquam dictum.</p>
+                </div>   
+
+                <div class="fig">
                     <figure>
-                        <img src="images/Service1.png" alt="WebSite" width="50" height="50"/>
+                        <img src="images/Service1.png" class="img-redonda" alt="WebSite"/>
+
                         <figcaption>
                             <h4>WebSites</h4>
-                            <p>Blablablá</p>
+                            <p>Curabitur vestibulum blandit, porttitor. </p>
                         </figcaption> 
-                        
-                        <img src="images/Service2.png" alt="Templates" width="50" height="50"/>
+                    </figure>
+
+                    <figure>
+                        <img src="images/Service2.png" class="img-redonda" alt="Templates"/>
+
                         <figcaption>
                             <h4>Templates</h4>
-                            <p>balabalabalabalabala</p>
+                            <p>balabalabala</p>
                         </figcaption>
-                        
-                        <img src="images/Service3.png" alt="Temas Wordpress" width="50" height="50"/>
+                    </figure>
+
+                    <figure>
+                        <img src="images/Service3.png" class="img-redonda" alt="Temas Wordpress"/>
+
                         <figcaption>
                             <h4>Temas Wordpress</h4>
-                            <p>vamos estudar </p>
+                            <p>vamos estudar cada vez mais e dominar o mundo </p>
                         </figcaption>
-                        
                     </figure>
-                    
-                </section>
-            
-                <section class="portfolio">
-                    <h2>Portfólio</h2>
-                    <p>Hoje me desafio a aprender e desenvolver habilidades para ser destaque no mercado. </p>
-                    
-                    <hr>
-                    <nav><!--<div id="navegacao"> local onde é feito a navegação, "submenu" -->
+                </div>
+            </section>
+
+            <section class="portfolio">
+                <div class="border2">
+                    <h2>Meus Trabalhos</h2>
+                    <p>Duis et mauris non mi iaculis accumsan. Quisque tristique eros eu arcu aliquam dictum.</p>
+                </div>
+
+                <div id="nav-secundario"><!--<div id="navegacao"> local onde é feito a navegação, "submenu" -->
                     <ul>
                       <li><a href="tudo.html">Tudo</a></li>
                       <li><a href="website.html">WebSite</a></li>
                       <li><a href="template.png">Templates</a></li>
                       <li><a href="tema.html">Tema</a></li>
                     </ul>
-                </nav>
-                    <!-- por enquanto as imagens são referências para elas mesmas -->
-    
+                </div>
+                <!-- por enquanto as imagens são referências para elas mesmas -->
+                <div class="fig">
                     <figure>
-                        <a href="images/Portfolio01.png"><img src="images/Portfolio01.png" width="100"/></a>
-                        
-                        <figcaption>
-                             <h4>Thumbnail label</h4>
-                            <p>Teste programador </p>
-                        </figcaption>
-                        
-                        <figcaption>
-                             <h4>Thumbnail label</h4>
-                            <p>Teste programador </p>
-                        </figcaption>
-                        
-                        <a href="images/Portfolio02.png"><img src="images/Portfolio02.png" width="100"/></a>
-                        
-                        <figcaption>
-                            <h4>Thumbnail label</h4>
-                            <p>Teste programador </p>
-                        </figcaption>
-                        
-                        <a href="images/Portfolio03.png"><img src="images/Portfolio03.png" width="100"/></a>
-                        
-                        <figcaption>
-                            <h4>Thumbnail label</h4>
-                            <p>Teste programador </p>
-                        </figcaption>
-                                                 
-                    </figure>
-                </section>
+                        <a href="images/Portfolio01.png"><img src="images/Portfolio01.png"/></a>
 
-                <section class="sobremim">
+                        <figcaption>
+                             <h4>Thumbnail label</h4>
+                            <p>Thumbnail caption... </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>    
+                        <a href="images/Portfolio02.png"><img src="images/Portfolio02.png"/></a>
+
+                        <figcaption>
+                            <h4>Thumbnail label</h4>
+                            <p>Thumbnail caption...</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="images/Portfolio03.png"><img src="images/Portfolio03.png"/></a>
+
+                        <figcaption>
+                            <h4>Thumbnail label</h4>
+                            <p>Thumbnail caption... </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="sobremim">
+                <div class="border1">
                     <h2>Quem eu sou</h2>
-                    <p>Hoje me desafio a aprender e desenvolver habilidades para ser destaque no mercado. </p>
-                    <hr>
-                    
-                    <figure>
-                        <img src="images/photo.png" width="50"/>
-                        <figcaption>Joana D'arc</figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <a href="home.html"><img src="images/icon-facebook.png" alt="facebook" width="50"/></a>
-                        
-                        <a href="home.html"><img src="images/icon-instagram.png" alt="instragram" width="50"/></a>
-                        
-                        <a href="home.html"><img src="images/icon-linkedin.png" alt="linkedin" width="50"/></a>
-                        
-                    </figure>
-                    
-                    <h3>Sobre mim</h3>
-                    <p>Hoje me desafio a aprender e desenvolver habilidades para ser destaque no mercado. </p>
-                    
-                    <h3>Habilidades</h3>
-                    <!-- a barra de progresso será mostrada no css e/ou javascript -->
-                                    
-                    <div class="progresso">Java Script</div>
-                    <div class="progresso">
-                    HTML e CSS</div>
-                    <div class="progresso">
-                    jQuery</div>
-                    <div class="progresso">Wordpress</div>
-                    
-                </section>
+                    <p>Duis et mauris non mi iaculis accumsan. Quisque tristique eros eu arcu aliquam dictum.</p>
+                </div>
+                
+                <div class="nome">
+                    <img src="images/photo.png" class="img-pessoal" data-title="Joana D'arc" alt="Joana"/>
+                    <p>Joana D'arc</p>
+                </div>
+                
+                <div class="img-social">
+                    <a href="home.html"><img src="images/icon-facebook.png" class="link-midia" title= "Facebook" alt="facebook"/></a>
 
-                <section class="contato">
+                    <a href="home.html"><img src="images/icon-twitter.png" class="link-midia" title="Instagram" alt="instagram"/></a>
+
+                    <a href="home.html"><img src="images/icon-linkedin1.png" class="link-midia" title="Linkedin" alt="linkedin"/></a>
+                </div>
+
+                    
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est non dui sollicitudin rhoncus. Integer ut ornare lacus, et lobortis diam. Cras gravida purus tortor. Aliquam vel nibh ligula. Nullam lacinia nisi vitae vulputate sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pulvinar metus id tincidunt euismod. Nulla in ex ac erat ultrices porttitor at id est. Vestibulum in malesuada erat, nec pulvinar leo. Pellentesque aliquam elementum purus, vitae porta dolor molestie sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+                <h2>Habilidades</h2>
+                <!-- a barra de progresso será mostrada no css e/ou javascript -->
+
+                <!--<div class="progress-bar">Java Script</div>
+                <div class="progress-bar">
+                HTML e CSS</div>
+                <div class="progress-bar">
+                jQuery</div>
+                <div class="progress-bar">Wordpress</div>-->
+                
+                <div class="progress-bar-js">Java Script</div>
+
+                <div class="progress-bar-HC" role="progressbar">HTML e CSS</div>
+            
+                <div class="progress-bar-jQ">jQuery</div>
+                
+                <div class="progress-bar-Wp">Wordpress</div>
+                
+            </section>
+
+            <section class="contato">
+                <div class="border2">
                     <h2>Contato</h2>
-                    <p>Hoje me desafio a aprender e desenvolver habilidades para ser destaque no mercado. </p>
-                    <hr>
-                    <div id="email">nayaracn@outlook.com</div>
-                    <p>+55 22 999587526</p>
+                    <p>Duis et mauris non mi iaculis accumsan. Quisque tristique eros eu arcu aliquam dictum.</p>
+                </div>
+
+                <div id="email"><a href="mailto:nayaracn@outlook.com">ncn@email.com</a></div>
+
+                <div id="phone">
+                <a href="tel:+5522999999999">+55 22 999999999</a>
+                </div>
+
+                <div class="border3">
                     <p>Mídias</p>
-                    <hr>
-                    <!-- buscar por imagens -->
-                    <a href="home.html"><img src="images/icon-facebook.png" alt="facebook" width="50"/></a>
-                        
-                    <a href="home.html"><img src="images/icon-instagram.png" alt="instragram" width="50"/></a>
-                        
-                    <a href="home.html"><img src="images/icon-linkedin.png" alt="linkedin" width="50"/></a>
-                </section>
-            </div>
-            
-            <footer>
-                <p>Women + Tech = &lt; /strong &gt;</p>
-            </footer>
-            
-            
+                </div>
+
+                <!-- buscar por imagens -->
+                <div class="img-social">
+                    <a href="home.html"><img src="images/icon-facebook.png" alt="facebook" width="50" color="white"/></a>
+
+                    <a href="home.html"><img src="images/icon-twitter.png" alt="instagram" width="50"/></a>
+
+                    <a href="home.html"><img src="images/icon-linkedin1.png" alt="linkedin" width="50"/></a>
+                    
+                    
+                </div>
+            </section>
+
         </main>
+        
+        <footer>
+                <p>Women + Tech = &lt; /strong &gt;</p>
+        </footer>
         
     </body>
 </html>
-    

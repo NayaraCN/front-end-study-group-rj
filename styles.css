@@ -1,0 +1,395 @@
+html,body{
+    width: 100%;
+    height:100%;
+}
+
+body {
+    font-size: 20px;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+}
+
+nav,footer {
+    background-color: #111111;
+}
+nav ul {
+    float: right;
+    list-style:none;
+    margin:0;
+    padding: 4px;
+}
+nav ul li {
+    display:inline-block;
+}
+nav ul li a {
+    font-size: 0.85em;
+    text-decoration: none;
+    color: #FFF; 
+    padding: 4px 20px;
+}
+nav ul li a:hover {
+    background-color: darkmagenta;
+    border: 1px solid #ffff00;
+}
+nav img {
+    position: relative;
+    width: 80px;
+    max-width: 90%;
+    height: 60px;
+    top: 0px;
+    right: 0px;
+    left: 150px;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+/* menu secundário na section portfolio*/
+#nav-secundario ul {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+}
+
+#nav-secundario ul li {
+    display: inline-block
+}
+
+#nav-secundario ul li a {
+    font-size: 0.85em;
+    text-decoration: none;
+    color: #000000; 
+    padding: 4px 20px;
+    border: 1px solid #808080;
+}
+
+#nav-secundario ul li a:hover {
+    background-color: #000000;
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+/*main*/
+
+/* section home*/
+/* não sei pq mas se colocar class na primeira identificao home nao funciona, nao entendi pq*/ 
+
+#home {
+    background-image: url(images/Slider.png);
+    background-repeat: repeat;
+    z-index: 0;
+    position: relative;
+    
+}
+
+.home {
+    /*background-color: rgba(139,0,139, 0.7);*/
+    display: block;
+    position: relative;
+    line-height:0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #111 rgba(139,0,139, 0.7);
+    border-width: 30px 675px 0px;
+    bac
+    
+}
+
+.home-content{ /* area do conteúdo*/
+    
+    padding: 7% 10% 5%;
+    
+}
+
+.home-content h2, .home-content h3, .home-content p {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.home-content p {
+    line-height: 1.5;
+    color: white;
+}
+.home img {
+    float: right;
+    width: 300px;
+    height: 300px;
+}
+
+/*bordas geométricas section home
+.home {
+    display: block;
+    position: relative;
+    line-height:0;
+    border-style: solid;
+    border-color: #111 rgba(139,0,139, 0.7);
+    border-width: 30px 680px 0px;
+}*/
+
+/*bordas em torno de alguns p para ilustrar linhas decorativas*/
+
+.border1, .border2, .border3 {
+    border-bottom-style: solid;
+    border-width: 0 0 2px 0;
+}
+.border1 {
+    border-bottom-color: #FFF;
+}
+
+.border1, .border2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.border2, .border3 {
+    border-bottom-color: #111111;
+}
+
+.border3 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*figuras e imagens das sections não home*/
+/*div  id usa-se #*/
+.fig {
+    display: flex;
+    justify-content:center;
+    color: white;/*não pode ser usado aqui*/
+    text-align: center;
+    padding: 50px;
+}
+
+figcaption {
+    background-color: #111111;
+    margin: -25px 0;
+    padding: 10px 6px;
+    height: 70px;
+}
+
+.img-redonda {
+    max-width:100px;
+    max-height:100px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    width: auto;
+    height: auto;
+}
+
+.img-redonda, .servicos figcaption {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: auto;
+}
+
+.servicos figcaption {
+    width: 190px;
+}
+
+.portfolio img {
+    max-width: 350px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.portfolio .fig {
+    float: left;
+}
+
+.portfolio figure{
+    padding: 20px;
+    margin-left: -30px;
+    margin-top: -70px;
+    margin-bottom: 20px;
+}
+
+/* efeito de borda das sections*/
+
+/*background das sections e definicoes das sections*/
+
+.home{
+    width:auto;
+    margin-bottom: -20px;
+}
+.servicos,.sobremim,.portfolio,.contato{
+    width:auto;
+    margin-bottom: -20px;
+    padding: 20px;
+}
+
+/*tamanho das sections na tela*/
+.home,.contato,.teste {
+    height: 70vh;
+}
+.servicos {
+    height: 90vh;
+}
+.portfolio {
+    height: 100vh;
+}
+.sobremim {
+    height: 190vh;
+}
+footer {
+    height: 5vh;
+}
+
+/*definicao dos conteudos das sections*/
+
+.servicos,.sobremim {
+    background: #111111; 
+}
+
+.servicos p, .sobremim p {
+    color: #FFF;
+} 
+
+.portfolio,.contato {
+    background: orange; 
+}
+
+/*cor de titulo e testos das sections*/
+.servicos h2, .sobremim h2, .portfolio h2, .contato h2 {
+    color: deeppink;
+}
+
+p, h1, h2, h3, h4, .sobremim .border1 h2 {
+    text-align: center;
+}
+
+.servicos h4, .portfolio h4, .sobremim .nome p, .sobremim h1, .sobremim h2 {
+    color: #FF8C00;
+}
+
+.sobremim h2 {
+    text-align: left;
+}
+/*Obs.: usando ".sobremim .nome p " acima para ficar fácil de identificar a classe*/
+
+.portfolio p, .portfolio h4{
+    padding: 4px;
+}
+
+.portfolio p {
+    margin-top: -5px;
+}
+
+.portfolio h4 {
+    margin-bottom: 1px;
+}
+
+/* imagem section sobremim*/
+
+.img-pessoal{
+    max-width: 700px;
+    max-height:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.link-midia {
+    max-width:30px;
+    max-height:30px;
+    border-radius: 50px;
+    border: 2px solid #111111;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    
+}
+
+.img-social {
+    text-align: center;
+}
+
+.contato .img-social {
+    
+    filter: brightness(9);
+    margin-top: 40px;
+}
+/*class progresso*/
+
+.progress-bar-js, .progress-bar-HC, .progress-bar-jQ, .progress-bar-Wp{
+    width: 50%;
+    float: left;
+    line-height: 40px;
+    text-align:left;
+    font-size: 0.8em;
+    color: white;
+    border: 1px solid #FFF;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.progress-bar-js{
+    background: linear-gradient(to right,#8B008B 0%,#8B008B 70%, #FFF 10%);
+}
+.progress-bar-HC {
+    background: linear-gradient(to right,#8B008B 0%,#8B008B 95%, #FFF 10%);
+}
+.progress-bar-jQ {
+    background: linear-gradient(to right,#8B008B 0%,#8B008B 60%, #FFF 10%);
+}
+
+.progress-bar-Wp {
+    background: linear-gradient(to right,#8B008B 0%,#8B008B 62%, #FFF 10%);
+}
+
+
+/*section contato: define*/
+
+#email, #phone {
+    background-color:transparent;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#email {
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 50px
+}
+
+#phone {
+    padding: 3px;
+}
+
+#email a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#phone a {
+    color: #FFF;
+    text-decoration: none;
+    }
+
+#email a:hover, #phone a:hover {
+    color: #000060;
+    text-decoration: underline;
+}
+
+/*footer: define */
+
+footer {
+    clear:both;
+    margin:0 auto;
+    font-size:0.75em;
+    text-align:center;
+    padding:4px;
+    position: relative;
+}
+
+footer p {
+    text-decoration: none;
+    color:white;
+}
